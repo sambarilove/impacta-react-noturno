@@ -10,7 +10,7 @@ const requisicao = function(request, response){
 const server = http.createServer(requisicao)
 
 const resultado = function(){
-    console.log('Servidor em funcionamento')    
+    console.log('Servidor em funcionamento')
 }
 
 server.listen(3000, resultado)
