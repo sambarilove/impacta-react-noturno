@@ -1,15 +1,26 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "API do projeto de cursos React Impacta",
+  "description": "Curso React",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambarilove/impacta-react-noturno.git"
   },
   "keywords": [
     "curso",
     "react"
   ],
   "author": "Paulo",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sambarilove/impacta-react-noturno/issues"
+  },
+  "homepage": "https://github.com/sambarilove/impacta-react-noturno#readme",
+  "dependencies": {
+    "mongoose": "^5.8.0"
+  }
 }
