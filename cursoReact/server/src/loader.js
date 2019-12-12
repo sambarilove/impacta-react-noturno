@@ -1,3 +1,3 @@
-const server = require('./config/server');
-const db = require('./config/db');
-require('./config/routes')(server);
+const server = require('./config/server')
+require('./config/db')
+const rotas = require('./config/routes')(server)
