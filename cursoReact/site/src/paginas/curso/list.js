@@ -10,6 +10,14 @@ export class ListCurso extends Component {
             <tr key={curso._id}>
                 <td>{curso.codigo}</td>
                 <td>{curso.descricao}</td>
+                <td>
+                    <button className="btn btn-success ml-3" onClick={() => this.props.consultarCurso(curso)}>
+                        <i className="fa fa-check"></i>
+                    </button>
+                    <button className="btn btn-danger ml-3" onClick={() => this.props.removerCurso(curso)}>
+                        <i className="fa fa-trash-o"></i>
+                    </button>
+                </td>
             </tr>
         ));
     }
