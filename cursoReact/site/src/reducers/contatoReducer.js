@@ -1,9 +1,9 @@
 const INITIAL_STATE = {
-    data: '2019-12-11',
-    nome: 'Paulo',
-    email: 'pauloromano@gmail.com',
-    telefone: 11223344,
-    assunto: 'informações sobre curso'
+    data: '',
+    nome: '',
+    email: '',
+    telefone: '',
+    assunto: ''
 }
 
 export default function(state = INITIAL_STATE, action){
@@ -13,6 +13,7 @@ export default function(state = INITIAL_STATE, action){
         case 'ATUALIZA_EMAIL' : return {...state, email : action.value};
         case 'ATUALIZA_TELEFONE' : return {...state, telefone : action.value};
         case 'ATUALIZA_ASSUNTO' : return {...state, assunto : action.value};
+        case 'LIMPAR_FORM' : return INITIAL_STATE;
         default : return state
     }
 }
